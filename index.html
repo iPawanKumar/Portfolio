@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pawan kumar R Portfoilio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">PK.</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#aboutme">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">HELLO</p>
+          <h1 class="title">
+            I'm <span>Pawan kumar<br />a</span> Aspiring developer
+          </h1>
+          <p class="description">
+            from <span>INDIA</span>
+          </p>
+          <div class="action__btns">
+            <button class="hire__me" onClick="document.getElementById('contact').scrollIntoView();">Hire Me</button>
+            <button class="Contact__me" onClick="document.getElementById('contact').scrollIntoView();" >Contact Me</button>
+          </div>
+        </div>
+        <div class="image">
+          <img src="Images/IMG20220815153013_00-02.jpeg" alt="profile" />
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutme" class="about_section">
+      <div class="section__container">
+        <div class="image">
+          <img src="Images/3d-business-man-studying-online.png" alt="profile" />
+        </div>
+        <div class="content">         
+          <h1 class="title">
+            <h1 class="aboutmetitle">About Me</h1>
+            As a budding developer, i'm always eager to learn and apply my knowledge in the workplace. I have a passion for technology and driven to create innovative solutions that solve real-world problems. although my carrer path and experiences are different the goal remians constant
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects_section">
+      <div class="projects__container">
+        <h2 class="projects__title">My Projects</h2>
+        <p class="projects__description">
+          Here are some of the projects I have worked on.
+        </p>
+        <div class="projects__list">
+          <div class="project__item">
+            <img src="Images/3d-casual-life-analytics-on-computer-screen.png" alt="Project 1" />
+            <h3 class="project__title">Smart Aqua System</h3>
+            <p class="project__description">Smart aquaculture monitoring and systemis predicated on Internet of Things. The technology is extremely adaptable and cost effective. It’s a real-time system that measures numerous parameters concerning the water and makes sure the water maintains the standard for the lives of fishes as well.</p>
+          </div>
+          <div class="project__item">
+            <img src="Images/3d-casual-life-laptop-with-open-article-and-notes.png" alt="Project 2" />
+            <h3 class="project__title">Wireless Signage Boards</h3>
+            <p class="project__description">A Signage Board which is usually attached to the wall or something to display messages or giving information about any thing. In communication,the Bluetooth wireless technology has become very popular and it is one of the fastest growing fields in the wireless technology.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="resume" class="resume_section">
+      <div class="resume__container">
+        <h2 class="resume__title">Resume</h2>
+        <p class="resume__description">
+          My resume outlines my skills, education, and work experience. I am always eager to learn and grow in my field.
+        </p>
+        <a href="resume/Pawan Kumar R (1).pdf" class="resume__link" download>Download My Resume</a>
+      </div>
+    </section>
+
+
+    <section id="contact" class="contact_section">
+      <div class="contact__container">
+        <h2 class="contact__title">Contact Me</h2>
+        <p class="contact__description">
+          I would love to hear from you! Whether you have a question, want to discuss a project, or just want to say hello, feel free to reach out using the form below.
+        </p>
+        <form class="contact__form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="55a2e5e7-6090-477b-bfb7-dd2083c72abb">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="contact__submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </body>
+</html>
